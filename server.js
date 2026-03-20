@@ -1,11 +1,14 @@
+require('dotenv').config();
 const express = require('express');
-const app = express();
-const port = 3000;
+var app = express();
 
-app.get('/', (req, res) => {
-    res.send('Hello World!');
-});
+app.use(express.json());
 
-app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
-});
+app.use('/reservation',require('./Controllers/ReservationController'));
+
+app.use('/user',require('./Controllers/UserController'));
+
+app.use('/restaurant',require('./Controllers/RestaurantController'));
+
+
+app.listen(process.env.port);

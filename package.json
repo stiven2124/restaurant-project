@@ -4,10 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stiven2124/hello-world-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stiven2124/hello-world-api/issues"
+  },
+  "homepage": "https://github.com/stiven2124/hello-world-api#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.3.1",
+    "jsonwebtoken": "^9.0.3",
+    "mysql2": "^3.18.2"
+  }
 }
